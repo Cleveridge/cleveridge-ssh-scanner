@@ -32,7 +32,7 @@ At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environ
       1st : uncomment 'dynamic_chain' (remove the # in front of it)   
       2nd : comment 'strict_chain' and 'ramdom chain' (add a # in front of it)   
       3th : Below [ProxyList], add your Tor Listener settings, this could be   
-            ```socks4 127.0.0.1 9050  ``` 
+            ```socks4 127.0.0.1 9050  ```     
       More info : http://www.shellhacks.com/en/Anonymous-Port-Scanning-Nmap-Tor-ProxyChains   
 
 3. Download the Cleveridge SSH Scanner files into a directory of your choise and chmod it so you are allowed to execute it.
