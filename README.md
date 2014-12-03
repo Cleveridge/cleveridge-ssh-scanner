@@ -23,23 +23,23 @@ At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environ
 
 
 ##How to use in Linux
-1. Be sure you have tor and proxychains installed.
+1. Be sure you have Tor and Proxychains installed.   
    if you have problems installing these programs there is enough documentation available online.
 
-2. Edit your proxychains configuration file:
-   Most of the time you will find this file at /etc/proxychains.conf
-   What to change...
-      1st : uncomment 'dynamic_chain' (remove the # in front of it)
-      2nd : comment 'strict_chain' and 'ramdom chain' (add a # in front of it)
-      3th : Below [ProxyList], add your Tor Listener settings, this could be
-            socks4 127.0.0.1 9050
-      More info : http://www.shellhacks.com/en/Anonymous-Port-Scanning-Nmap-Tor-ProxyChains
+2. Edit your proxychains configuration file:   
+   Most of the time you will find this file at /etc/proxychains.conf   
+   What to change...   
+      1st : uncomment 'dynamic_chain' (remove the # in front of it)   
+      2nd : comment 'strict_chain' and 'ramdom chain' (add a # in front of it)   
+      3th : Below [ProxyList], add your Tor Listener settings, this could be   
+            socks4 127.0.0.1 9050   
+      More info : http://www.shellhacks.com/en/Anonymous-Port-Scanning-Nmap-Tor-ProxyChains   
 
 3. Download the Cleveridge SSH Scanner files into a directory of your choise and chmod it so you are allowed to execute it.
 
-4. In Terminal, go to the Cleveridge SSH Scanner directory and execute:
-    service tor start
-    proxychains ./cl_ssh_scan.py
+4. In Terminal, go to the Cleveridge SSH Scanner directory and execute:   
+    ```service tor start   
+    proxychains ./cl_ssh_scan.py  ``` 
 
 ##Contact Info 
 **Cleveridge** - Ethical Hacking Lab   
