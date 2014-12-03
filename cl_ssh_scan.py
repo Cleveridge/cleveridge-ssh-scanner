@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "005"
+build = "006"
 #############################################################
 
 import pxssh
@@ -442,4 +442,7 @@ else: # If hidden IP
       else :
          print "The selected file seems empty"
          func_exit()
+   
+   else :
+      func_exit()
       	
