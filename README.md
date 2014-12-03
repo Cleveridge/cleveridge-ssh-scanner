@@ -10,10 +10,12 @@ The tool offers you the options to attack
 
 !!! The tool works only in combination Tor, Proxychains and Python !!!
 
-*Tested*
+Tested
+++++++
+
 At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environment with Python 2.7, Proxychains (http://proxychains.sourceforge.net/) and Tor (https://www.torproject.org/) installed.
 
-*How to use in Linux*
+*How to use in Linux
 1. Be sure you have tor and proxychains installed.
 if you have problems installing these programs there is enough documentation available online.
 
