@@ -40,8 +40,8 @@ At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environ
     proxychains ./cl_ssh_scan.py
 
 ##Contact Info 
-**Cleveridge** - Ethical Hacking Lab 
-De Brulen 28 
-2370 Arendonk 
-Belgium 
+**Cleveridge** - Ethical Hacking Lab   
+De Brulen 28   
+2370 Arendonk   
+Belgium   
 https://cleveridge.org
