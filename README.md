@@ -1,3 +1,5 @@
+![Cleveridge logo](https://cleveridge.org/images/logo.jpg)
+
 cleveridge-ssh-scanner
 ======================
 ####IMPORTANT:
