@@ -8,7 +8,7 @@ cleveridge-ssh-scanner
 >Users have to act as permitted by local law rules.
 
 ##What is the Cleveridge SSH Scanner
-The Cleveridge SSH Scanner is a SSH Brute Force tool written in python. The tool tries to get access to machines (IPv4) on the SSH port (22). When the machines is accesable on port 22, the tool brute forces the ssh login with the most common default user names and passwords.
+The Cleveridge SSH Scanner is a SSH Brute Force tool written in python. The tool tries to get access to machines (IPv4) on the SSH port (22). When the machines is accessible on port 22, the tool brute forces the ssh login with the most common default user names and passwords.
 
 The tool offers you the options to attack
 - one IP
