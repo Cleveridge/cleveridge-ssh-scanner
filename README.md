@@ -1,12 +1,13 @@
 cleveridge-ssh-scanner
 ======================
-*IMPORTANT:
+###IMPORTANT:
 This tool is for ethical testing purpose  
 only.                                  
 Cleveridge and its owners can't be held responsible for misuse by users.
 Users have to act as permitted by local
 law rules.*
 
+##What is the Cleveridge SSH Scanner
 The Cleveridge SSH Scanner is a SSH Brute Force tool written in python. The tool tries to get access to machines (IPv4) on the SSH port (22). When the machines is accesable on port 22, the tool brute forces the ssh login with the most common default user names and passwords.
 
 The tool offers you the options to attack
@@ -17,13 +18,11 @@ The tool offers you the options to attack
 !!! The tool works only in combination Tor, Proxychains and Python !!!
 
 
-Tested
-------
+##Tested
 At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environment with Python 2.7, Proxychains (http://proxychains.sourceforge.net/) and Tor (https://www.torproject.org/) installed.
 
 
-How to use in Linux
--------------------
+##How to use in Linux
 1. Be sure you have tor and proxychains installed.
    if you have problems installing these programs there is enough documentation available online.
 
