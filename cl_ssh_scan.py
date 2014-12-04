@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "007"
+build = "008"
 #############################################################
 
 import pxssh
@@ -89,7 +89,13 @@ def func_scanhost(ip, logloc):
                   func_writelog('a', logloc, txt + '\n')
                   print txt
                   blocked = True
-                  break  
+                  break
+               elif response[:17] == "End Of File (EOF)" :
+                  txt = 'Stopped due to blocked by victim'
+                  func_writelog('a', logloc, txt + '\n')
+                  print txt
+                  blocked = True
+                  break
       
       txt = "Tried " + str(tried) + " combinations"
       func_writelog("a", logloc, txt + "\n")
