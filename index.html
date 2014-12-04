@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Cleveridge-ssh-scanner : The Cleveridge SSH Scanner is a SSH Brute Force tool written in python. The tool tries to get access to machines (IPv4) on the SSH port (22). When the machines is accessible on port 22, the tool brute forces the ssh login with the most common default user names and passwords.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Cleveridge-ssh-scanner</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Cleveridge/cleveridge-ssh-scanner">View on GitHub</a>
+
+          <h1 id="project_title">Cleveridge-ssh-scanner</h1>
+          <h2 id="project_tagline">The Cleveridge SSH Scanner is a SSH Brute Force tool written in python. The tool tries to get access to machines (IPv4) on the SSH port (22). When the machines is accessible on port 22, the tool brute forces the ssh login with the most common default user names and passwords.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Cleveridge/cleveridge-ssh-scanner/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Cleveridge/cleveridge-ssh-scanner/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><img src="https://cleveridge.org/images/logo.jpg" alt="Cleveridge logo"></p>
+
+<h1>
+<a id="cleveridge-ssh-scanner" class="anchor" href="#cleveridge-ssh-scanner" aria-hidden="true"><span class="octicon octicon-link"></span></a>cleveridge-ssh-scanner</h1>
+
+<h4>
+<a id="important" class="anchor" href="#important" aria-hidden="true"><span class="octicon octicon-link"></span></a>IMPORTANT:</h4>
+
+<blockquote>
+<p>This tool is for ethical testing purpose only.<br>
+Cleveridge and its owners can't be held responsible for misuse by users.<br>
+Users have to act as permitted by local law rules.</p>
+</blockquote>
+
+<h2>
+<a id="what-is-the-cleveridge-ssh-scanner" class="anchor" href="#what-is-the-cleveridge-ssh-scanner" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is the Cleveridge SSH Scanner</h2>
+
+<p>The Cleveridge SSH Scanner is a SSH Brute Force tool written in python. The tool tries to get access to machines (IPv4) on the SSH port (22). When the machines is accessible on port 22, the tool brute forces the ssh login with the most common default user names and passwords.</p>
+
+<p>The tool offers you the options to attack</p>
+
+<ul>
+<li>one IP</li>
+<li>a range of IP's (e.g. 192.168.0.1-25)</li>
+<li>IP's listed in a file</li>
+</ul>
+
+<p>!!! The tool works only in combination Tor, Proxychains and Python !!!</p>
+
+<h2>
+<a id="tested" class="anchor" href="#tested" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tested</h2>
+
+<p>At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environment with Python 2.7, Proxychains (<a href="http://proxychains.sourceforge.net/">http://proxychains.sourceforge.net/</a>) and Tor (<a href="https://www.torproject.org/">https://www.torproject.org/</a>) installed.</p>
+
+<h2>
+<a id="how-to-use-in-linux" class="anchor" href="#how-to-use-in-linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use in Linux</h2>
+
+<ol>
+<li><p>Be sure you have Tor and Proxychains installed.<br>
+if you have problems installing these programs there is enough documentation available online.</p></li>
+<li><p>Edit your proxychains configuration file:<br>
+Most of the time you will find this file at /etc/proxychains.conf<br>
+What to change...<br>
+  1st : uncomment 'dynamic_chain' (remove the # in front of it)<br>
+  2nd : comment 'strict_chain' and 'ramdom chain' (add a # in front of it)<br>
+  3th : Below [ProxyList], add your Tor Listener settings, this could be<br>
+        <code>socks4 127.0.0.1 9050</code><br>
+  More info : <a href="http://www.shellhacks.com/en/Anonymous-Port-Scanning-Nmap-Tor-ProxyChains">http://www.shellhacks.com/en/Anonymous-Port-Scanning-Nmap-Tor-ProxyChains</a>   </p></li>
+<li><p>Download the Cleveridge SSH Scanner files into a directory of your choise and chmod it so you are allowed to execute it.</p></li>
+<li><p>In Terminal, go to the Cleveridge SSH Scanner directory and execute:<br>
+<code>service tor start</code><br>
+<code>proxychains ./cl_ssh_scan.py</code> </p></li>
+</ol>
+
+<h2>
+<a id="contact-info" class="anchor" href="#contact-info" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Info</h2>
+
+<p><strong>Cleveridge</strong> - Ethical Hacking Lab<br>
+De Brulen 28<br>
+2370 Arendonk<br>
+Belgium<br>
+<a href="https://cleveridge.org">https://cleveridge.org</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Cleveridge-ssh-scanner maintained by <a href="https://github.com/Cleveridge">Cleveridge</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
