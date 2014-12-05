@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "009"
+build = "010"
 #############################################################
 
 import pxssh
@@ -112,7 +112,6 @@ def func_checkIPrange(ip_range):
    print 'Checking IP range... ',
    reply = False
    posHyphen = ip_range.find('-')
-   print posHyphen,
    if int(posHyphen) > 6 and int(posHyphen) <= 15 :
       ip_first = ip_range[:posHyphen]
       ip_untill = ip_range[posHyphen +1:]
