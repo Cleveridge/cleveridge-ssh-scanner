@@ -49,5 +49,5 @@ Belgium
 https://cleveridge.org
 
 ##Developer
-**Erwin De Laat** ( redN00ws ) 
+**Erwin De Laat** [ redN00ws ]     
 https://twitter.com/erwindelaat
