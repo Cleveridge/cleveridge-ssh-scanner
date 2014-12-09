@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "010"
+build = "011"
 #############################################################
 
 import pxssh
@@ -338,7 +338,7 @@ print txt
 
 #-- Visible IP --#
 try :
-   visible_ip = urlopen('https://cleveridge.org/_exchange/open_files/return_ip.php').read()
+   visible_ip = urlopen('https://cleveridge.org/_exchange/open_files/return_ip.php?s=ssh_scan').read()
 except Exception :
    visible_ip = urlopen('https://enabledns.com/ip').read()
 txt = "Visible IP : " + visible_ip
