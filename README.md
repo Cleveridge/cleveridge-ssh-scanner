@@ -1,6 +1,6 @@
 ![Cleveridge logo](https://cleveridge.org/images/logo.jpg)
 
-cleveridge SSH Scanner
+Cleveridge SSH Scanner
 ======================
 ####IMPORTANT:
 >This tool is for ethical testing purpose only.   
