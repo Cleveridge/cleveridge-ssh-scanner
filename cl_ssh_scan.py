@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "011"
+build = "012"
 #############################################################
 
 import pxssh
@@ -207,7 +207,7 @@ def func_printDataFileOptions(data_files):
 
 # func Exit
 def func_exit():
-   print "Exiting...\n\nThanks for using\nCleveridge SSH Scanner"
+   print "Exiting...\n\nThanks for using\nCleveridge SSH Scanner\n\nCleveridge : https://cleveridge.org/nSSH Scanner : https://github.com/Cleveridge/cleveridge-ssh-scanner"
 
 
 
@@ -347,11 +347,11 @@ print txt
 
 #-- if private IP is visible
 if visible_ip == my_ip: # if your real ip is visible -> Break up 
-   txt = "   Break up - visible !!!\n \n   Add 'Socks4 127.0.0.1 9050' to /etc/proxychains.conf.\n   Start Tor service, then \n   proxychains ./cl_ssh_scan.py"
+   txt = "   Your IP is visible !!!\n \n" #   Add 'Socks4 127.0.0.1 9050' to /etc/proxychains.conf.\n   Start Tor service, then \n   proxychains ./cl_ssh_scan.py"
    func_writelog("a", logloc, txt + "\n")
    print txt
    
-else: # If hidden IP
+if True :
    
    # Select Method
    print "\n\n *************************************\n * Select a method :                 *\n *************************************\n * h : Scan one host ip              *\n * r : Scan a range of IP's          *\n * f : Scan IP's from file (one/row) *\n *************************************"
