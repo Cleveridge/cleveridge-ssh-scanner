@@ -22,12 +22,13 @@ The Cleveridge SSH Scanner is also successfully tested in combination with Proxy
 
 
 ##How to use in Linux
-1. Download the Cleveridge SSH Scanner files into a directory of your choise and chmod it so you are allowed to execute it.
-
+1. Download the Cleveridge SSH Scanner files into a directory of your choise and chmod it so you are allowed to execute it.   
+    
 2. In Terminal, go to the Cleveridge SSH Scanner directory and execute:   
-    ```./cl_ssh_scan.py  ``` 
-or 
-
+    ```./cl_ssh_scan.py  ```       
+     
+or     
+      
 1. Be sure you have Tor and Proxychains 3.1 installed.   
    if you have problems installing these programs there is enough documentation available online.
 
