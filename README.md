@@ -17,7 +17,7 @@ The tool offers you the options to attack
 
 
 ##Tested
-At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environment with Python 2.7 installed
+At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environment with Python 2.7 installed.     
 The Cleveridge SSH Scanner is also successfully tested in combination with Proxychains 3.1 (http://proxychains.sourceforge.net/) and Tor (https://www.torproject.org/) to hide the ip of the user.
 
 
