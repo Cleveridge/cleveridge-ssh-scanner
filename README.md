@@ -15,15 +15,20 @@ The tool offers you the options to attack
 - a range of IP's (e.g. 192.168.0.1-25)
 - IP's listed in a file
 
-!!! The tool works only in combination Tor, Proxychains and Python !!!
-
 
 ##Tested
-At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environment with Python 2.7, Proxychains (http://proxychains.sourceforge.net/) and Tor (https://www.torproject.org/) installed.
+At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environment with Python 2.7 installed
+The Cleveridge SSH Scanner is also successfully tested in combination with Proxychains 3.1 (http://proxychains.sourceforge.net/) and Tor (https://www.torproject.org/) to hide the ip of the user.
 
 
 ##How to use in Linux
-1. Be sure you have Tor and Proxychains installed.   
+1. Download the Cleveridge SSH Scanner files into a directory of your choise and chmod it so you are allowed to execute it.
+
+2. In Terminal, go to the Cleveridge SSH Scanner directory and execute:   
+    ```./cl_ssh_scan.py  ``` 
+or 
+
+1. Be sure you have Tor and Proxychains 3.1 installed.   
    if you have problems installing these programs there is enough documentation available online.
 
 2. Edit your proxychains configuration file:   
