@@ -49,7 +49,7 @@ or
 
 ##On the first run...
 ...the Cleveridge SSH Scanner will automatically install the following folders:    
-- log : in this folder all the logfiles of scans will be saved    
+- log : in this folder all the log files of scans will be saved    
 - cnf : configurations folder    
 - data : in this folder the user can store files containing lists of ip addresses he/she wants to scan   
 
