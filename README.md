@@ -47,6 +47,12 @@ or
     ```service tor start             ```  
     ```proxychains ./cl_ssh_scan.py  ``` 
 
+##On the first run...
+...the Cleveridge SSH Scanner will automatically install the following folders:    
+- log : in this folder all the logfiles of scans will be saved    
+- cnf : configurations folder    
+- data : in this folder the user can store files containing lists of ip addresses he/she wants to scan   
+
 ##Contact Info 
 **Cleveridge** - Ethical Hacking Lab   
 De Brulen 28   
