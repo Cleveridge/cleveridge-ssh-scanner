@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "012"
+build = "013"
 #############################################################
 
 import pxssh
@@ -215,8 +215,8 @@ def func_exit():
 
 #++ PROGRAM ++#
 os.system('clear')
-user = ["root", "admin", "sysadmin", "oracle", "webmaster"]
-pswd = ["root", "toor", "admin", "000000", "1111", "111111", "11111111", "123", "123.com", "123123", "123123123", "1234", "12345", "123456", "1234567", "12345678", "123456789", "1234567890", "1234qwer", "123abc", "123qwe", "123qweasd", "147147", "1q2w3e", "1q2w3e4r", "1q2w3e4r5t", "1q2w3e4r5t6y", "1qaz2wsx", "1qaz2wsx3edc", "1qazxsw2", "abc123", "abc@123", "Admin@123", "P@ssw0rd", "Password1", "a123456", "admin1", "admin123", "admin@123", "adminadmin", "administrator", "changeme", "cisco", "cisco123", "default", "firewall", "letmein", "linux", "oracle", "p@ssw0rd", "passw0rd", "password", "q1w2e3r4", "q1w2e3r4t5", "qwerty", "r00t", "redhat", "root123", "rootpass", "rootroot", "server", "test", "test123", "zaq1xsw2"]
+user = ["root", "admin", "sysadmin", "oracle", "webmaster", "pi"]
+pswd = ["root", "toor", "admin", "000000", "1111", "111111", "11111111", "123", "123.com", "123123", "123123123", "1234", "12345", "123456", "1234567", "12345678", "123456789", "1234567890", "1234qwer", "123abc", "123qwe", "123qweasd", "147147", "1q2w3e", "1q2w3e4r", "1q2w3e4r5t", "1q2w3e4r5t6y", "1qaz2wsx", "1qaz2wsx3edc", "1qazxsw2", "abc123", "abc@123", "Admin@123", "P@ssw0rd", "Password1", "a123456", "admin1", "admin123", "admin@123", "adminadmin", "administrator", "changeme", "cisco", "cisco123", "default", "firewall", "letmein", "linux", "oracle", "p@ssw0rd", "passw0rd", "password", "q1w2e3r4", "q1w2e3r4t5", "qwerty", "r00t", "raspberry", "redhat", "root123", "rootpass", "rootroot", "server", "test", "test123", "zaq1xsw2"]
 
 print "************************************************"
 print "||            CLEVERIDGE SSH SCANNER          ||"
