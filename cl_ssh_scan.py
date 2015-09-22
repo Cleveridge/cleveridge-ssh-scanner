@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "014"
+build = "015"
 #############################################################
 
 import pxssh
@@ -230,7 +230,7 @@ print "||  Users have to act as permitted by local   ||"
 print "||  law rules.                                ||"
 print "************************************************"
 print "||     Cleveridge - Ethical Hacking Lab       ||"
-print "||               cleveridge.org               ||"
+print "||          https://cleveridge.org            ||"
 print "************************************************\n"
 print "Version %s build %s" % (version, build)
 
@@ -316,7 +316,7 @@ print " " # to create a better view of the logs on screen
 
 
 #-- Register date and time of scan --#
-txt = "Tool started : %s/%s/%s - %s:%s:%s" % (now.year, now.month, now.day, now.hour, now.minute, now.second)
+txt = "Tool started : %s/%s/%s - %s:%s:%s" % (now.year, format(now.month, '02d'), format(now.day, '02d'), format(now.hour, '02d'), format(now.minute, '02d'), format(now.second, '02d'))
 func_writelog("a", logloc, txt + "\n\n")
 print txt
 print " "
