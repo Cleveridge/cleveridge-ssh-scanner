@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "013"
+build = "014"
 #############################################################
 
 import pxssh
@@ -258,7 +258,7 @@ if not os.path.exists(logdir):
 """ Every run : create log file """
 #-- Creating log file in directory 'log' --#
 now = datetime.now()
-logfile = str(now.year) + str(now.month) + str(now.day) + str(now.hour) + str(now.minute) + str(now.second) + ".log"
+logfile = str(now.year) + str(format(now.month, '02d')) + str(format(now.day, '02d')) + '_' + str(format(now.hour, '02d')) + str(format(now.minute, '02d')) + str(format(now.second, '02d')) + ".log"
 print "Creating log : log/%s" % (logfile),
 logloc = logdir + "/" + logfile
 with open(logloc, "w") as mylog:
