@@ -14,7 +14,7 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "015"
+build = "016"
 #############################################################
 
 import pxssh
@@ -22,8 +22,13 @@ import getpass
 import glob
 import os
 import socket
+import ssl
 import sys
 import time
+try:
+    import urllib.request as urllib2
+except ImportError:
+    import urllib2
 from datetime import datetime
 from urllib import urlopen
 
@@ -337,10 +342,13 @@ func_writelog("a", logloc, txt + "\n")
 print txt
 
 #-- Visible IP --#
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
 try :
-   visible_ip = urlopen('https://cleveridge.org/_exchange/open_files/return_ip.php?s=ssh_scan').read()
+   visible_ip = urllib2.urlopen('https://cleveridge.org/_exchange/open_files/return_ip.php?s=ssh_scan', context=ctx).read()
 except Exception :
-   visible_ip = urlopen('https://enabledns.com/ip').read()
+   visible_ip = urllib2.urlopen('https://enabledns.com/ip', context=ctx).read()
 txt = "Visible IP : " + visible_ip
 func_writelog("a", logloc, txt + "\n")
 print txt
