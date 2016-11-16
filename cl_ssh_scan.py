@@ -14,10 +14,9 @@
 #############################################################
 #                                                           #
 version = "V0.04"
-build = "016"
+build = "019"
 #############################################################
 
-import pxssh
 import getpass
 import glob
 import os
@@ -29,6 +28,10 @@ try:
     import urllib.request as urllib2
 except ImportError:
     import urllib2
+try:
+	import pxssh
+except ImportError:
+	from pexpect import pxssh as pxssh
 from datetime import datetime
 from urllib import urlopen
 
@@ -444,8 +447,10 @@ if True :
       		
             
             for line in fl :
-               ip_l.append(line)
-               print ' - ' + line
+               if len(line) > 6 :
+				   line = line.rstrip()
+				   ip_l.append(line)
+				   print('- %s') % line
          except Exception :
             print 'Selection not valid'
       else :
